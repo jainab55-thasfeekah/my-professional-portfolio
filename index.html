@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jainab Thasfeekah A | Portfolio</title>
+<style>
+:root {
+  --bg: #f5f0e8;
+  --brown: #674b3c;
+  --dark: #30251f;
+  --muted: #786b61;
+  --card: #fffdf9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #e5dbcf;
+}
+.logo { font-size: 21px; font-weight: bold; color: var(--brown); }
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--brown); }
+section { padding: 75px 9%; scroll-margin-top: 70px; }
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.eyebrow { color: var(--brown); font-weight: bold; letter-spacing: 2px; }
+h1 { font-size: clamp(38px, 6vw, 65px); line-height: 1.15; margin: 15px 0; }
+h2 { font-size: 32px; color: var(--brown); margin-bottom: 25px; }
+p { color: var(--muted); }
+.hero p { max-width: 560px; font-size: 17px; }
+.btn {
+  display: inline-block;
+  background: var(--brown);
+  color: white;
+  padding: 12px 23px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 24px;
+}
+.photo {
+  width: 270px;
+  height: 330px;
+  border: 2px dashed #a58c79;
+  border-radius: 140px 140px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  background: #e9dfd2;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e8ded3;
+}
+.card h3 { color: var(--brown); margin-bottom: 10px; }
+.tag {
+  display: inline-block;
+  background: #e9dfd2;
+  color: var(--brown);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 13px;
+}
+.alt { background: #eee5da; }
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #e9dfd2;
+  color: var(--brown);
+}
+a { color: var(--brown); }
+@media(max-width: 700px) {
+  nav { flex-direction: column; gap: 10px; }
+  nav a { margin: 0 7px; font-size: 12px; }
+  .hero { flex-direction: column; text-align: center; padding-top: 55px; }
+  .photo { width: 220px; height: 260px; }
+  section { padding: 55px 7%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">JT.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</div>
+    <h1>I'm Jainab<br>Thasfeekah A.</h1>
+    <h3>AI & ML Student | Aspiring Developer</h3>
+    <p>Exploring technology, building creative solutions and continuously learning to turn ideas into meaningful projects.</p>
+    <a class="btn" href="#projects">Explore My Work</a>
+  </div>
+  <div class="photo">Your professional photo will go here</div>
+</section>
+
+<section id="about" class="alt">
+  <h2>About Me</h2>
+  <p>I am an Artificial Intelligence and Machine Learning student with an interest in programming, web development and emerging technologies. I enjoy participating in hackathons, exploring new tools and developing projects that solve real-world problems. I believe in continuous learning and improving my technical and communication skills.</p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Programming</h3><span class="tag">C</span><span class="tag">C++ Basics</span><span class="tag">Java Basics</span><span class="tag">Python</span></div>
+    <div class="card"><h3>Tools & Technologies</h3><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL Basics</span><span class="tag">Excel</span><span class="tag">GitHub</span></div>
+    <div class="card"><h3>Professional Skills</h3><span class="tag">Communication</span><span class="tag">Teamwork</span><span class="tag">Problem Solving</span><span class="tag">Adaptability</span></div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <h2>Projects & Hackathons</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>SmartSeat AI</h3>
+      <p>An exam seating arrangement generator designed to organise students across rooms while reducing same-branch adjacency.</p>
+      <p><strong>Tech:</strong> Python, Streamlit, Pandas, ReportLab</p>
+      <a href="https://exam-seating-arrangement-generator--jainabthasfeeka.replit.app/" target="_blank">View Project ↗</a>
+    </div>
+    <div class="card">
+      <h3>SignSpeak AI</h3>
+      <p>A sign language translation project focused on converting hand gestures into text and speech.</p>
+      <p><strong>Focus:</strong> AI, computer vision and accessibility</p>
+    </div>
+    <div class="card">
+      <h3>All-in-One Calculator</h3>
+      <p>A web-based calculator project created to practise programming and build useful calculation features.</p>
+      <a href="https://jainab55-thasfeekah.github.io/all-in-one-calculator/" target="_blank">View Project ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>B.E. – Computer Science and Engineering (AI & ML)</h3>
+    <p>Currently pursuing | Add your college name and expected graduation year</p>
+  </div>
+  <br>
+  <div class="card">
+    <h3>Vels Vidhyalaya Senior Secondary CBSE School</h3>
+    <p>Higher Secondary – 2026 | Secondary – 2024</p>
+  </div>
+</section>
+
+<section id="achievements" class="alt">
+  <h2>Achievements & Experiences</h2>
+  <div class="grid">
+    <div class="card"><h3>AI Hackathon</h3><p>Participated in an AI hackathon and developed an exam seating arrangement generator project.</p></div>
+    <div class="card"><h3>Elektrotec 2026</h3><p>Explored industrial electronics, electrical solutions and renewable energy technologies.</p></div>
+    <div class="card"><h3>Industrial Visit</h3><p>Observed cutting, packing and quality-checking processes during a visit to KPR Mill.</p></div>
+  </div>
+  <p style="margin-top:20px;">Certificate images and additional achievements can be added here.</p>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <p>I'm always open to learning opportunities, collaborations and connecting with fellow technology enthusiasts.</p>
+  <div class="card" style="margin-top:20px;">
+    <p>Email: Add your email address</p>
+    <p>LinkedIn: Add your LinkedIn profile link</p>
+    <p>GitHub: Add your GitHub profile link</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Jainab Thasfeekah A. | Designed with passion.
+</footer>
+
+</body>
+</html>
